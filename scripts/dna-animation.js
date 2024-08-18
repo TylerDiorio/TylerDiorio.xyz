@@ -37,14 +37,16 @@ function initCanvas() {
     canvas = document.getElementById('dna-canvas');
     if (!canvas) {
         console.error('Canvas element not found');
-        return;
+        return false;
     }
     ctx = canvas.getContext('2d');
     resizeCanvas();
     window.addEventListener('resize', debounce(resizeCanvas, 250));
+    return true;
 }
 
 function resizeCanvas() {
+    if (!canvas) return;
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     updateDNAParameters();

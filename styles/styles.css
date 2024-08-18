@@ -29,6 +29,21 @@ body {
     overflow-x: hidden;
 }
 
+#dna-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -73,24 +88,19 @@ main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    padding: 0 5%;
-    position: relative;
-    z-index: 1;
 }
 
 #home {
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    height: 100vh;
-    padding-top: calc(var(--nav-height) + 10px);
+    justify-content: flex-start;
+    align-items: center;
+    padding: calc(var(--nav-height) + 20px) 5% 50px;
+    position: relative;
 }
 
 .content {
     max-width: 50%;
-    display: flex;
-    flex-direction: column;
 }
 
 .header-content {
@@ -107,6 +117,7 @@ main {
     background-position: center;
     border-radius: 50%;
     margin-right: 30px;
+    margin-bottom: 50px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -117,9 +128,9 @@ main {
 }
 
 .content h2.name {
-    font-size: 32px;
+    font-size: 36px;
     color: var(--text-color);
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     font-weight: 700;
 }
 
@@ -208,18 +219,11 @@ main {
     transition: opacity 0.3s ease;
 }
 
-#dna-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
 #about {
     padding: 100px 5%;
-    background-color: rgba(255, 255, 255, 0.05);
+    background: linear-gradient(to bottom, rgba(10,10,10,0) 0%, var(--bg-color) 20%);
+    position: relative;
+    z-index: 2;
 }
 
 #about h2 {
@@ -228,12 +232,62 @@ main {
     color: var(--accent-color);
 }
 
+#about h3 {
+    font-size: 24px;
+    margin: 30px 0 20px;
+    color: var(--accent-color);
+}
+
 #about p {
     font-size: 18px;
     line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
+    margin-bottom: 15px;
     color: var(--text-color);
+}
+
+#about ol {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+#about li {
+    margin-bottom: 20px;
+}
+
+#about a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#about a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+#about p3 {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: var(--text-controls-color);
+}
+
+#about p3:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    cursor: help;             /* Change cursor to indicate it's an info icon */
+}
+.info-icon {
+    content: '📌';
+    font-weight: bold;        /* Make it bold for better emphasis */
+    background-color: var(--soft-bg);/* Optional: light background for visibility */
+    color: #007BFF;           /* Optional: blue color for emphasis (like an info button) */
+    opacity: 0.7;
+    border-radius: 50%;       /* Make it circular */
+    padding: 5px 5px;         /* Adjust size and padding */
+    font-size: 0.8em;         /* Adjust size as needed */
+    cursor: help;             /* Change cursor to indicate it's an info icon */
+    margin-right: 10px;        /* Add some space between the icon and text */
 }
 
 .easter-egg-toggle {
@@ -351,7 +405,6 @@ main {
     font-weight: bold;
 }
 
-/* Add this new rule */
 .easter-egg-hint-box.correct .answer-input,
 .easter-egg-preview.correct .answer-input {
     color: transparent;
@@ -542,21 +595,17 @@ main {
 
 @media (max-width: 768px) {
     #home {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding-top: var(--nav-height);
+        padding-top: calc(var(--nav-height) + 50px);
     }
-    
+
     .content {
         max-width: 100%;
     }
-    
+
     .header-content {
         flex-direction: column;
     }
-    
+
     .profile-picture {
         margin-right: 0;
         margin-bottom: 20px;
@@ -577,6 +626,22 @@ main {
 
     .social-links {
         justify-content: center;
+    }
+
+    #about {
+        padding: 50px 5%;
+    }
+
+    #about h2 {
+        font-size: 28px;
+    }
+
+    #about h3 {
+        font-size: 22px;
+    }
+
+    #about p, #about li {
+        font-size: 16px;
     }
 
     .easter-egg-hint-box,
