@@ -124,7 +124,7 @@ main {
 }
 
 .profile-picture:hover {
-    transform: scale(1.05) translateY(-50px); /* Added translateY to maintain the 50px upward shift */
+    transform: scale(1.05) translateY(-5px); /* Added translateY to maintain the 50px upward shift */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
