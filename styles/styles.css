@@ -209,7 +209,7 @@ main {
 
 .social-links a:hover {
     background-color: var(--accent-color);
-    transform: translateY(-55px); /* Changed from -5px to -55px to maintain the 50px upward shift */
+    transform: translateY(-5px); /* Changed from -5px to -55px to maintain the 50px upward shift */
 }
 
 .social-links a img {
