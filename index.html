@@ -3,12 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tyler Diorio</title>
+    <title>Tyler Diorio - Better incentives, better science</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Tyler Diorio - Better incentives, better science">
+    <meta property="og:description" content="Accelerating science at ResearchHub. Ex-biomechanics/neuroimaging researcher. Ph.D. 2023 (Weldon School of Biomedical Engineering, Purdue University)">
+    <meta property="og:image" content="https://tylerdiorio.xyz/assets/images/site-preview.gif">
+    <meta property="og:image:type" content="image/gif">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://tylerdiorio.xyz">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tyler Diorio - Better incentives, better science">
+    <meta name="twitter:description" content="Accelerating science at ResearchHub. Ex-biomechanics/neuroimaging researcher. Ph.D. 2023 (Weldon School of Biomedical Engineering, Purdue University)">
+    <meta name="twitter:image" content="https://tylerdiorio.xyz/assets/images/site-preview.gif">
+    
+    <script src="./scripts/background-animation.js" type="module"></script>
+    <script src="./scripts/dna-animation.js" type="module"></script>
+    <script src="./scripts/script.js" type="module"></script>
 </head>
 <body>
     <canvas id="dna-canvas"></canvas>
-    
     <div class="content-wrapper">
         <header>
             <nav>
@@ -19,15 +38,12 @@
             </nav>
         </header>
 
-        <main>
-            <section id="home">
+        <main role="main">
+            <section id="home" class="section">
                 <div class="content">
                     <div class="header-content">
                         <div class="profile-picture"></div>
-                        <h2 class="name">
-                            <span>Tyler</span><br>
-                            <span>Diorio</span>
-                        </h2>
+                        <h2 class="name">Tyler Diorio</h2>
                     </div>
                     <h1>
                         <span class="main-text">Better incentives,</span>
@@ -48,112 +64,75 @@
                 </div>
             </section>
 
-            <section id="about">
+            <section id="about" class="section">
                 <h2>About</h2>
-                
                 <p>Accelerating science at <a href="https://www.researchhub.com/author/956713" target="_blank">ResearchHub</a></p>
-                
                 <p>Ex-biomechanics/neuroimaging researcher</p>
-                
                 <p>Ph.D. 2023 (Weldon School of Biomedical Engineering, Purdue University)</p>
-              
+
                 <h3>Publications</h3>
                 <ol class="publications-list">
-                  <li>
-                    <button class="publication-toggle" aria-expanded="false">
-                      Computational hemodynamic modeling of arterial aneurysms: A mini-review
-                    </button>
-                    <div class="publication-details" hidden>
-                      <a href="https://www.researchhub.com/paper/1272688/computational-hemodynamic-modeling-of-arterial-aneurysms-a-mini-review" target="_blank">
-                        Lipp SN, Niedert EE, Cebull HL, Diorio TC, Ma JL, Rothenberger SM, Stevens BK, Goergen CJ. Computational hemodynamic modeling of arterial aneurysms: A mini-review. Front Physiol. 2020;11:454.
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <button class="publication-toggle" aria-expanded="false">
-                      Computational modeling of drug transport and mixing in the chemofilter device: enhancing the removal of chemotherapeutics from circulation
-                    </button>
-                    <div class="publication-details" hidden>
-                      <a href="https://www.researchhub.com/paper/1272689/computational-modeling-of-drug-transport-and-mixing-in-the-chemofilter-device-enhancing-the-removal-of-chemotherapeutics-from-circulation" target="_blank">
-                        Maani, N., Diorio, TC, Hetts, S.W. et al. Computational modeling of drug transport and mixing in the chemofilter device: enhancing the removal of chemotherapeutics from circulation. Biomech Model Mechanobiol 19, 1865--1877 (2020).
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <button class="publication-toggle" aria-expanded="false">
-                      Real-time quantification of in vivo cerebrospinal fluid velocity using fMRI inflow effect
-                    </button>
-                    <div class="publication-details" hidden>
-                      <a href="https://www.researchhub.com/paper/1278109/estimation-of-in-vivo-cerebrospinal-fluid-velocity-using-fmri-inflow-effect" target="_blank">
-                        Diorio TC, Vijayakrishnan Nair V, Patel NM, Hedges LE, Rayz VL, Tong Y. Real-time quantification of in vivo cerebrospinal fluid velocity using fMRI inflow effect. bioRxiv. 2023.
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <button class="publication-toggle" aria-expanded="false">
-                      Real-time quantification of in vivo cerebrospinal fluid velocity using the functional magnetic resonance imaging inflow effect
-                    </button>
-                    <div class="publication-details" hidden>
-                      <a href="https://www.researchhub.com/paper/6688871/realtime-quantification-of-in-vivo-cerebrospinal-fluid-velocity-using-the-functional-magnetic-resonance-imaging-inflow-effect" target="_blank">
-                        Diorio TC, Nair VV, Patel NM, Hedges LE, Rayz VL, Tong Y. Real-time quantification of in vivo cerebrospinal fluid velocity using the functional magnetic resonance imaging inflow effect. NMR in Biomedicine. 2024;e5200.
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <button class="publication-toggle" aria-expanded="false">
-                      Using respiratory challenges to modulate CSF movement across different physiological pathways: An fMRI study
-                    </button>
-                    <div class="publication-details" hidden>
-                      <a href="https://www.researchhub.com/paper/6693930/using-respiratory-challenges-to-modulate-csf-movement-across-different-physiological-pathways-an-fmri-study" target="_blank">
-                        Nair VJ, Diorio TC, Wen Q, Rayz VL, Tong Y. Using respiratory challenges to modulate CSF movement across different physiological pathways: An fMRI study. Imaging Neurosci. 2024;2:1-14.
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <button class="publication-toggle" aria-expanded="false">
-                      MRI-based quantification of cardiac-driven brain biomechanics for early detection of neurological disorders
-                    </button>
-                    <div class="publication-details" hidden>
-                      <a href="https://www.researchhub.com/paper/6695069/mri-based-quantification-of-cardiac-driven-brain-biomechanics-for-early-detection-of-neurological-disorders" target="_blank">
-                        Diorio TC, Abderezzai J, Nauman E, Kurt M, Tong Y, Rayz VL. MRI-based quantification of cardiac-driven brain biomechanics for early detection of neurological disorders. bioRxiv. 2024. doi: 10.1101/2024.08.01.606246.
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <button class="publication-toggle" aria-expanded="false">
-                      Concussive injuries induce neuronal stress-dependent tau mislocalization to dendritic spines with acrolein and functional network alteration in TBI-on-a-chip
-                    </button>
-                    <div class="publication-details" hidden>
-                      Rogers EA, Diorio TC, Beauclair T, Martinez J, Mufti SJ, Kim D, Krishnan N, Rayz V, Shi R. Concussive injuries induce neuronal stress-dependent tau mislocalization to dendritic spines with acrolein and functional network alteration in TBI-on-a-chip. (Submitted) to: Nat Biomed Eng.
-                    </div>
-                  </li>
+                    <li>
+                        <button class="publication-toggle" aria-expanded="false">Computational hemodynamic modeling of arterial aneurysms: A mini-review</button>
+                        <div class="publication-details" hidden>
+                            <a href="https://www.researchhub.com/paper/1272688/computational-hemodynamic-modeling-of-arterial-aneurysms-a-mini-review" target="_blank">Lipp SN, Niedert EE, Cebull HL, Diorio TC, Ma JL, Rothenberger SM, Stevens BK, Goergen CJ. Computational hemodynamic modeling of arterial aneurysms: A mini-review. Front Physiol. 2020;11:454.</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="publication-toggle" aria-expanded="false">Computational modeling of drug transport and mixing in the chemofilter device: enhancing the removal of chemotherapeutics from circulation</button>
+                        <div class="publication-details" hidden>
+                            <a href="https://www.researchhub.com/paper/1272689/computational-modeling-of-drug-transport-and-mixing-in-the-chemofilter-device-enhancing-the-removal-of-chemotherapeutics-from-circulation" target="_blank">Maani, N., Diorio, TC, Hetts, S.W. et al. Computational modeling of drug transport and mixing in the chemofilter device: enhancing the removal of chemotherapeutics from circulation. Biomech Model Mechanobiol 19, 1865--1877 (2020).</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="publication-toggle" aria-expanded="false">Real-time quantification of in vivo cerebrospinal fluid velocity using fMRI inflow effect</button>
+                        <div class="publication-details" hidden>
+                            <a href="https://www.researchhub.com/paper/1278109/estimation-of-in-vivo-cerebrospinal-fluid-velocity-using-fmri-inflow-effect" target="_blank">Diorio TC, Vijayakrishnan Nair V, Patel NM, Hedges LE, Rayz VL, Tong Y. Real-time quantification of in vivo cerebrospinal fluid velocity using fMRI inflow effect. bioRxiv. 2023.</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="publication-toggle" aria-expanded="false">Real-time quantification of in vivo cerebrospinal fluid velocity using the functional magnetic resonance imaging inflow effect</button>
+                        <div class="publication-details" hidden>
+                            <a href="https://www.researchhub.com/paper/6688871/realtime-quantification-of-in-vivo-cerebrospinal-fluid-velocity-using-the-functional-magnetic-resonance-imaging-inflow-effect" target="_blank">Diorio TC, Nair VV, Patel NM, Hedges LE, Rayz VL, Tong Y. Real-time quantification of in vivo cerebrospinal fluid velocity using the functional magnetic resonance imaging inflow effect. NMR in Biomedicine. 2024;e5200.</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="publication-toggle" aria-expanded="false">Using respiratory challenges to modulate CSF movement across different physiological pathways: An fMRI study</button>
+                        <div class="publication-details" hidden>
+                            <a href="https://www.researchhub.com/paper/6693930/using-respiratory-challenges-to-modulate-csf-movement-across-different-physiological-pathways-an-fmri-study" target="_blank">Nair VJ, Diorio TC, Wen Q, Rayz VL, Tong Y. Using respiratory challenges to modulate CSF movement across different physiological pathways: An fMRI study. Imaging Neurosci. 2024;2:1-14.</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="publication-toggle" aria-expanded="false">MRI-based quantification of cardiac-driven brain biomechanics for early detection of neurological disorders</button>
+                        <div class="publication-details" hidden>
+                            <a href="https://www.researchhub.com/paper/6695069/mri-based-quantification-of-cardiac-driven-brain-biomechanics-for-early-detection-of-neurological-disorders" target="_blank">Diorio TC, Abderezzai J, Nauman E, Kurt M, Tong Y, Rayz VL. MRI-based quantification of cardiac-driven brain biomechanics for early detection of neurological disorders. bioRxiv. 2024. doi: 10.1101/2024.08.01.606246.</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="publication-toggle" aria-expanded="false">Concussive injuries induce neuronal stress-dependent tau mislocalization to dendritic spines with acrolein and functional network alteration in TBI-on-a-chip</button>
+                        <div class="publication-details" hidden>
+                            Rogers EA, Diorio TC, Beauclair T, Martinez J, Mufti SJ, Kim D, Krishnan N, Rayz V, Shi R. Concussive injuries induce neuronal stress-dependent tau mislocalization to dendritic spines with acrolein and functional network alteration in TBI-on-a-chip. (Submitted) to: Nat Biomed Eng.
+                        </div>
+                    </li>
                 </ol>
-                
-                <p3><span class="info-icon">📌</span><a href="https://www.researchhub.com/author/956713" target="_blank">Better viewed on ResearchHub</a></p3>
-              </section>
+                <p3><span class="info-icon">📌</span>Better viewed on <a href="https://www.researchhub.com/author/956713" target="_blank">ResearchHub</a></p3>
+            </section>
         </main>
     </div>
 
-    <button class="easter-egg-toggle">★</button>
+    <button class="easter-egg-toggle" aria-label="Toggle Easter Egg"></button>
     <div class="easter-egg-hint-box">
-        <button class="close-button">×</button>
+        <button class="close-button">&times;</button>
         <p class="question"></p>
         <input type="text" class="answer-input" placeholder="Enter your answer">
     </div>
     <div class="easter-egg-preview">
-        <button class="close-button">×</button>
+        <button class="close-button">&times;</button>
         <p class="question"></p>
         <input type="text" class="answer-input" placeholder="Enter your answer">
     </div>
 
-    <button class="reset-view-button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
-            <path d="M3 3v5h5"></path>
-        </svg>
-    </button>
-
-    <button class="controls-toggle">🎮</button>
+    <button class="controls-toggle" aria-label="Toggle DNA Controls"></button>
     <div class="dna-controls">
         <div class="dna-control" data-key="Q" data-tooltip="Rotate DNA Left">Q</div>
         <div class="dna-control" data-key="W" data-tooltip="Move DNA Up">W</div>
@@ -163,6 +142,11 @@
         <div class="dna-control" data-key="D" data-tooltip="Move DNA Right">D</div>
     </div>
 
-    <script type="module" src="./scripts/script.js"></script>
+    <button class="reset-view-button" aria-label="Reset DNA View">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+            <path d="M3 3v5h5"></path>
+        </svg>
+    </button>
 </body>
 </html>
